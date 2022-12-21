@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+
+@Component({
+  selector: 'app-temporadas',
+  templateUrl: './temporadas.page.html',
+  styleUrls: ['./temporadas.page.scss'],
+})
+export class TemporadasPage  {
+
+  constructor(private alertController: AlertController) {}
+  
+  posters = [
+   {season : 0, poster: 'https://m.media-amazon.com/images/I/51SysoImI6L._AC_.jpg', syno: "Walter, diagnosed with inoperable lung cancer, conspires with Jesse to cook crystal meth to pay for his treatment and provide financial security for his family. Jesse secures an R.V. to cook in, while Walter devises a revolutionary formula using unregulated chemicals, creating a highly pure product tinted blue. After a run-in with the Mexican cartel, Walter adopts the nickname Heisenberg and trades his blue sky meth with psychotic drug lord Tuco Salamanca. The DEA and Hank, Walt's brother-in-law, become aware of Heisenberg's presence in the drug trade and begin investigating."},
+   {season : 1, poster: 'https://es.web.img3.acsta.net/pictures/18/07/23/11/26/1597342.jpg', syno: "Tuco and Walter become hostile and Tuco is killed by Hank. After a failed attempt by Walter and Jesse to start their own distribution network leaves one of their dealers arrested and one murdered, Walter hires corrupt lawyer Saul Goodman, who later connects them to high-profile drug distributor Gus Fring and hitman Mike Ehrmantraut. Jesse dates his apartment manager Jane, who introduces him to heroin, making him unreliable. After selling a shipment to Gus, Walt refuses to pay Jesse his half of the money, but Jane blackmails him. Walt returns to Jesse to apologize but instead allows an unconscious Jane to choke on her own vomit. Jesse, traumatized, enters rehab. Walt seems content until he witnesses a mid-air collision of two planes; a result of Jane's father, an air-traffic controller, becoming distraught over her death while working."},
+   {season : 2, poster: 'https://i.pinimg.com/originals/c2/c5/1d/c2c51de649689c4bd88be49fc447517e.jpg', syno:"Skyler learns of Walt's crimes and seeks a divorce from him. Walt briefly retires from the drug trade, but Gus offers him a job cooking meth at a hidden lab with an assistant, Gale. Hank's investigation leads him to Jesse. He finds no evidence, but assaults Jesse and is suspended from the DEA. Walt, in order to keep Jesse from suing Hank, coerces Gus into replacing Gale with Jesse as his lab assistant. Hank is attacked by Tuco's vengeful cousins and kills them, becoming paralyzed in the aftermath. Jesse's behavior becomes erratic, and Walt is forced to kill two of Gus' drug dealers to protect Jesse. After an enraged Gus orders them killed, Walt convinces Jesse to kill Gale so Gus cannot replace them."},
+   {season : 3, poster: 'https://i.pinimg.com/originals/50/c9/47/50c947c65a9055a613a1c1967bb2ddf4.jpg', syno:"Gus tightens security at the lab after Gale's death. Gus and Mike drive a wedge between Walt and Jesse, coercing Jesse to be their solitary cook while at the same time eliminating the Mexican cartel. Skyler accepts Walt's meth cooking and conspires with Saul to launder the earnings. Hank, in recovery, tracks Gale's death to Gus and the drug trade, so he plans to kill Hank. Walt tricks Jesse into turning against Gus, and convinces Hector Salamanca, the last living member of the cartel, to detonate a bomb while meeting with Gus, killing them both."},
+   {season : 4, poster: 'https://m.media-amazon.com/images/I/91RNSMNJlsL._AC_SL1500_.jpg', syno:"Hank discovers Walt is Heisenberg and begins gathering evidence. He turns to Jesse, who helps track Walt's money to the reservation. When Walt is arrested, Jack's gang arrives. They kill Hank, capture Jesse, and take most of Walt's money. Assuming Walt killed Hank, Skyler betrays Walt, forcing him to flee with the remaining money. After months in hiding, Walt plans to surrender but changes course after Elliott and Gretchen publicly minimize his involvement in starting Gray Matter. Walt manipulates Elliott and Gretchen to give his earnings to Walter Jr. once he turns 18. After poisoning Lydia, Walt admits to Skyler that he manufactured meth for his own satisfaction rather than for his family. At Jack's compound, Walter kills Jack and the rest of his gang with a remote turret and frees Jesse, who kills Todd. Wounded by his own weapon, Walt asks Jesse to kill him, but Jesse refuses. The two share a farewell glance before Jesse escapes. Walt dies from his wounds in Jack's meth lab."}
+ ]
+
+
+}

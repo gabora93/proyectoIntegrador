@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tema</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<app-header title="Cambiar Tema"></app-header>
+ 
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%; flex-direction: column">
+      <div text-center>
+        <div class="ion-margin-bottom">
+          <ion-select color="light" class="selectTheme" interface="popover"
+            [(ngModel)]="selectTheme" (ionChange)="dynamicTheme()">
+            <ion-select-option color="light" [value]="theme.class" *ngFor="let theme of themeColor;let i = index">
+              {{theme.name}}
+            </ion-select-option>
+          </ion-select>
+        </div>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>

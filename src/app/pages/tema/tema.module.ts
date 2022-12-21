@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TemaPageRoutingModule } from './tema-routing.module';
 
 import { TemaPage } from './tema.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TemaPageRoutingModule
+    TemaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [TemaPage]
 })

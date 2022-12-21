@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Temporadas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+<ion-list>
+  <ion-item>
+    <ion-label>Season 1</ion-label>
+    <ion-button [routerLink]="['/tablinks', 'temporada', posters[0]]"><ion-label>Ver</ion-label><ion-icon name="eye-outline"></ion-icon></ion-button>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Season 2</ion-label>
+    <ion-button [routerLink]="['/tablinks', 'temporada', posters[1]]"><ion-label>Ver</ion-label><ion-icon name="eye-outline"></ion-icon></ion-button>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Season 3</ion-label>
+    <ion-button [routerLink]="['/tablinks', 'temporada', posters[2]]"><ion-label>Ver</ion-label><ion-icon name="eye-outline"></ion-icon></ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Season 4</ion-label>
+    <ion-button [routerLink]="['/tablinks', 'temporada', posters[3]]"><ion-label>Ver</ion-label><ion-icon name="eye-outline"></ion-icon></ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Season 5</ion-label>
+    <ion-button [routerLink]="['/tablinks', 'temporada', posters[4]]"><ion-label>Ver</ion-label><ion-icon name="eye-outline"></ion-icon></ion-button>
+  </ion-item>
+</ion-list>
+</ion-content>

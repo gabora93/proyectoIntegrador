@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Lugares
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col 
+        sizeXs="12" sizeSm="6" size="4" sizeMd="4" sizeLg="3" sizeXl="2" 
+        *ngFor="let image of images">
+        <div><img src={{image}} > </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
